@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#F44336</color>
+  <color name="colorPrimaryDark">#D32F2F</color>
+  <color name="colorAccent">#536DFE</color>
+  <color name="bg_app">#f8f8f8</color>
+  <color name="shop_bg_app">#F1F1F1</color>
+
+  <color name="tab_unselect">#c9c9c9</color>
+  <color name="bg_btn">#dadada</color>
+
+  <color name="pre_order_selected_list_background">#f6f6f6</color>
+
+  <color name="pre_order_background">#F8F8F8</color>
+  <color name="pre_order_list_background">#ffffff</color>
+
+  <color name="font_color">#333333</color>
+  <color name="white">#fff</color>
+
+  <color name="line_divider">#E2E2E2</color>
+  <color name="red_background_btn">#FF6767</color>
+
+  <color name="red_font_color">#FF6666</color>
+  <color name="gray_background_right">#FAFAFA</color>
+  <color name="black">#444444</color>
+  <color name="gray_light">#EBEDF0</color>
+
+  <!--自定义dialog-->
+  <color name="jayne_text_primary_light">#e8ffb300</color>
+  <color name="jayne_text_secondary_light">#e9b65b00</color>
+  <color name="jayne_divider_light">#1fff002b</color>
+  <color name="jayne_pressed_light">#c74e2c00</color>
+  <color name="jayne_accent">#f42e35</color>
+
+  <color name="primary">#3C4655</color>
+  <color name="primary_dark">#0E0E0E</color>
+  <color name="accent">#F4982E</color>
+
+  <!--fanjunyan -->
+  <!--屏幕背景颜色-->
+  <color name="screen_background">#f2f2f2</color>
+  <color name="pink">#ff6666</color>
+  <!--按钮背景填充颜色-->
+  <color name="light_white">#f2f9fb</color>
+  <!--按钮背景填充颜色2-->
+  <color name="orange">#FF9F22</color>
+  <!-- 所有分界线的颜色-->
+  <color name="lightWhite">#A89A8D</color>
+
+  <!-- 背景的颜色\字体颜色1-->
+  <color name="dark_blue">#4aabc6</color>
+  <!-- 字体颜色2-->
+  <color name="gray_dark">#666666</color>
+  <!-- 字体颜色3-->
+  <color name="light_grey">#999999</color>
+  <!-- 字体颜色4-->
+  <color name="graywhite">#C0BFBB</color>
+  <!-- 字体颜色5-->
+  <color name="gray">#999999</color>
+  <!-- 字体颜色6-->
+  <color name="brown">#333333</color>
+
+</resources>

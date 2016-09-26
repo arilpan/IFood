@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    >
+
+  <TextView
+      android:id="@+id/dish_name"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="8dp"
+      android:layout_centerVertical="true"
+      android:gravity="center"
+      android:text="菜名"
+      />
+
+  <TextView
+      android:id="@+id/dish_price"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_centerInParent="true"
+      android:gravity="center"
+      android:text="价格"
+      />
+
+  <TextView
+      android:id="@+id/item_left"
+      android:layout_width="40dp"
+      android:layout_height="match_parent"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="10dp"
+      android:gravity="left|center"
+      android:padding="8dp"
+      android:text="-"
+      />
+
+  <TextView
+      android:id="@+id/item_middle"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+
+      android:layout_toLeftOf="@id/item_left"
+      android:gravity="center"
+      android:padding="8dp"
+      android:text="1"
+      />
+
+  <TextView
+      android:id="@+id/item_right"
+      android:layout_width="40dp"
+      android:layout_height="match_parent"
+      android:layout_toLeftOf="@id/item_middle"
+      android:gravity="right|center"
+      android:padding="8dp"
+      android:text="+"
+
+      />
+
+  <View
+      style="@style/line_divider_h"
+      android:layout_below="@id/item_right"
+      />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="debug">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_566a8e9e11e162b8a47987263c86c6d325aff0b0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_64387cbd96f20afa0d8fa48a3128960a49ac3c80.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_13916187f5992a725a82402c2d465b4ea90e737e.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/eventbus-3.0.0_e1f4e365f2ba089b2e0e11bdbd02fa53e7c0a4d0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/debug_dc97dae2d88f4145776b53c109f631613f2ced6f.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_a1ee6f69a13f2195e27fc1e89d23ddc9eb8237eb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_7d498ec213ae5134ba53043c6f91f9ec857104e2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_c313c113c3dae1562f7cb1e72ec4623aff1f9efc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/me.yokeyword-fragmentation-swipeback-0.7.9_be70c16e335847db96b6f691ae03da20ec81e6ee.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_6c95ecefbc66afa9a3c34d0b0ce882f72bc64c18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/me.yokeyword-fragmentation-0.7.9_cea76bc836c35bd2701d16cdde856448d728dc99.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.4.0_27eaa034ea8cfb87cc6c7409af265aa278c135c2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.android.support-design-23.4.0_9c028e5b8794c2b86ca9a60851b81aa54e94e726.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

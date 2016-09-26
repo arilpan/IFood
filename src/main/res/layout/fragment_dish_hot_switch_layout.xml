@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/common_title_back_grey_color"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/light_white"
+      >
+
+    <TextView
+        android:id="@+id/tab1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="第一家餐馆"
+        />
+
+    <TextView
+        android:id="@+id/placeholder_line"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="|"
+        />
+
+    <TextView
+        android:id="@+id/tab2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="第二家餐馆"
+        />
+  </LinearLayout>
+
+  <View style="@style/line_divider_h"/>
+  <com.zfeng.swiperefreshload.SwipeRefreshLoadLayout
+      android:id="@+id/refresh_layout_left"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="10dp"
+      >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/switch_recv_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#F8F8F8"
+        >
+    </android.support.v7.widget.RecyclerView>
+  </com.zfeng.swiperefreshload.SwipeRefreshLoadLayout>
+
+</LinearLayout>

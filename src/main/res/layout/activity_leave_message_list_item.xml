@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+  <TextView
+      android:id="@+id/leave_message_item_text1"
+      android:text="@string/leave_message_item_text1"
+      android:paddingLeft="20dp"
+      style="@style/leave_message_item_text_style"
+      />
+  <TextView
+      android:id="@+id/leave_message_item_ask"
+      android:text="是不是有WIFI\t?"
+      android:layout_toRightOf="@id/leave_message_item_text1"
+      android:paddingLeft="5dp"
+      style="@style/leave_message_item_text_style"
+      />
+  <TextView
+      android:id="@+id/leave_message_item_text2"
+      android:text="@string/leave_message_item_text2"
+      android:textColor="@color/gray"
+      android:paddingLeft="20dp"
+      android:layout_below="@id/leave_message_item_text1"
+      android:layout_centerVertical="true"
+      style="@style/leave_message_item_text_style"
+      />
+  <TextView
+      android:id="@+id/leave_message_item_answer"
+      android:text="都有免费的WIFI提供"
+      android:textColor="@color/gray"
+      android:layout_toRightOf="@id/leave_message_item_text1"
+      android:paddingLeft="5dp"
+      android:paddingBottom="15dp"
+      android:layout_centerVertical="true"
+      android:layout_below="@id/leave_message_item_text1"
+      style="@style/leave_message_item_text_style"
+      />
+
+
+</RelativeLayout>

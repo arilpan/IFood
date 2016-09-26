@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      >
+
+    <ImageView
+        android:id="@+id/discount_item_showimage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/zixun_pic"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/discount_item_dishes_name"
+        style="@style/discount_item_text_style"
+        android:text="红烧排骨\t\t(限量版)"
+        android:layout_toRightOf="@id/discount_item_showimage"
+        android:paddingTop="14dp"
+        android:maxLines="1"
+        android:paddingBottom="0dp"
+        />
+    <TextView
+        android:id="@+id/discount_item_dishes_description"
+        style="@style/discount_item_text_style"
+        android:text="外酥里嫩，颜色金黄。"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:layout_toRightOf="@id/discount_item_showimage"
+        android:layout_below="@id/discount_item_dishes_name"
+        android:paddingBottom="0dp"
+        />
+
+    <TextView
+        android:id="@+id/discount_item_dishes_price"
+        style="@style/discount_item_text_style"
+        android:text="￥16"
+        android:layout_toRightOf="@id/discount_item_showimage"
+        android:textColor="@color/pink"
+        android:layout_below="@id/discount_item_dishes_description"
+        android:paddingBottom="14dp"
+        />
+
+    <TextView
+        android:id="@+id/discount_item_rack_rate"
+        style="@style/discount_item_text_style"
+        android:text="门市价：￥32"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:layout_toRightOf="@id/discount_item_dishes_price"
+        android:layout_below="@id/discount_item_dishes_description"
+        android:paddingBottom="0dp"
+        android:paddingLeft="5dp"
+        />
+  </RelativeLayout>
+
+</LinearLayout>

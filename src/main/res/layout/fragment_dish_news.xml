@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_btn"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/common_title_back_grey_color"/>
+
+  <cn.bingoogolapple.bgabanner.BGABanner
+      android:id="@+id/news_banner"
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:layout_marginBottom="5dp"
+      style="@style/MatchMatch"
+      android:clickable="true"
+      app:banner_pageChangeDuration="2000"
+      app:paddingStart="5dp"
+      app:paddingEnd="5dp"
+      app:banner_tipTextSize="14sp"
+      app:banner_indicatorGravity="right"
+      app:banner_pointAutoPlayAble="true"
+      app:banner_pointContainerBackground="@android:color/transparent"
+      app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+      app:banner_pointTopBottomMargin="5dp"
+      app:banner_transitionEffect="fade"
+      />
+
+
+  <com.zfeng.swiperefreshload.SwipeRefreshLoadLayout
+      android:id="@+id/refresh_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="10dp"
+      >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/news_recyview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#F8F8F8"
+        >
+    </android.support.v7.widget.RecyclerView>
+  </com.zfeng.swiperefreshload.SwipeRefreshLoadLayout>
+</LinearLayout>

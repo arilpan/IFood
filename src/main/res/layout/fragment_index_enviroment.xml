@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/common_title_back_grey_color"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/light_white"
+      >
+
+    <TextView
+        android:id="@+id/tab1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="第一家餐馆"
+        />
+    <TextView
+        android:id="@+id/placeholder_line"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="|"
+        />
+    <TextView
+        android:id="@+id/tab2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="第二家餐馆"
+        />
+  </LinearLayout>
+
+  <View style="@style/line_divider_h"/>
+
+  <cn.bingoogolapple.bgabanner.BGABanner
+      android:id="@+id/index_child_banner"
+      style="@style/MatchMatch"
+      android:layout_weight="1"
+      android:clickable="true"
+      app:banner_pageChangeDuration="2000"
+      app:paddingStart="5dp"
+      app:paddingEnd="5dp"
+      app:banner_tipTextSize="14sp"
+      app:banner_indicatorGravity="right"
+      app:banner_pointAutoPlayAble="true"
+      app:banner_pointContainerBackground="@android:color/transparent"
+      app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+      app:banner_pointTopBottomMargin="5dp"
+      app:banner_transitionEffect="fade"
+      />
+</LinearLayout>

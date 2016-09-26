@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/common_title_back_grey_color"/>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+
+    <RelativeLayout
+        android:id="@+id/menu_selected"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        >
+
+
+      <ImageView
+          android:id="@+id/dish_left_img"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_margin="5dp"
+          android:layout_marginLeft="19dp"
+          android:src="@drawable/xuanzecaipin_caipin_n"
+          />
+
+      <TextView
+          android:id="@+id/total_price"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@id/dish_left_img"
+          android:text="￥32"
+          android:textColor="#ff6666"
+          android:textSize="11sp"
+          />
+
+      <Button
+          android:id="@+id/order_now_btn"
+          style="@style/dishes_order_btn"
+          android:text="@string/dishes_order_now"
+          />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/menu_selected"
+        android:orientation="horizontal"
+        >
+
+      <FrameLayout
+          android:id="@+id/fl_list_container"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          />
+
+      <FrameLayout
+          android:id="@+id/fl_content_container"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="2.5"
+          />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_child_list_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        >
+
+      <ListView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_above="@id/menu_selected"
+          android:layout_alignParentBottom="true"
+          >
+      </ListView>
+    </FrameLayout>
+  </RelativeLayout>
+
+</LinearLayout>

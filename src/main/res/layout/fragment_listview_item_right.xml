@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <TextView
+      android:id="@+id/eight_list_item_totime"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="2016-08-12 15:29:25"
+      android:textSize="11sp"
+      android:textColor="@color/gray"
+      android:layout_marginTop="20dp"
+      android:layout_centerHorizontal="true"
+      />
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/eight_list_item_totime"
+      >
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/eight_list_item_showimage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        fresco:placeholderImage="@drawable/pingjia_touxiang"
+        fresco:actualImageScaleType="fitCenter"
+        fresco:roundAsCircle="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/eight_list_item_totext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="星期天晚上可以预定5桌吗神么颜色别踩白块都很脆弱出包括加强和当初的巴基本次课教案和督促而广泛传播"
+        android:textSize="14sp"
+        android:textColor="@color/brown"
+        android:layout_toLeftOf="@+id/eight_list_item_showimage"
+        android:paddingRight="15dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="55dp"
+        />
+  </RelativeLayout>
+</RelativeLayout>

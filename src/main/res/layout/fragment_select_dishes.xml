@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.menu.SelectFragment"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/pre_order_selected_list_background"
+        >
+
+      <TextView
+          android:id="@+id/class_icon"
+          android:layout_width="4dp"
+          android:layout_height="14dp"
+          android:layout_centerVertical="true"
+          android:layout_marginBottom="7dp"
+          android:layout_marginLeft="18dp"
+          android:layout_marginTop="7dp"
+          android:background="@color/pink"
+          />
+
+      <TextView
+          android:id="@+id/class_name"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_gravity="top|center"
+          android:layout_marginLeft="27dp"
+          android:gravity="left|center"
+          android:text="我的餐桌"
+          android:textSize="14sp"
+          />
+
+      <TextView
+          android:id="@+id/clear_dish"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="18dp"
+          android:gravity="right|center"
+          android:text="清空餐桌"
+          android:textSize="14sp"
+          />
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginRight="5dp"
+          android:layout_toLeftOf="@id/clear_dish"
+          android:src="@drawable/xuanzecaipin_qingkong"
+          />
+    </RelativeLayout>
+
+    <View style="@style/line_divider_h"/>
+
+    <ListView
+        android:id="@+id/select_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="0dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        tools:listitem="@layout/fragment_select_dishes_list_item"
+        />
+
+  </LinearLayout>
+
+</FrameLayout>

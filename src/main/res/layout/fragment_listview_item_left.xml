@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <TextView
+      android:id="@+id/eight_list_item_fromtime"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="2016-08-12 15:29:25"
+      android:textSize="11sp"
+      android:textColor="@color/gray"
+      android:layout_marginTop="20dp"
+      android:layout_centerHorizontal="true"
+      />
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/eight_list_item_fromtime"
+      >
+    <ImageView
+        android:id="@+id/eight_list_item_showimage_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/iconfont_kefu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/eight_list_item_fromtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="星期天晚上可以预定5桌吗？可以吗可以吗可以吗可以吗可以吗可以吗"
+        android:textSize="14sp"
+        android:textColor="@color/brown"
+        android:paddingTop="16dp"
+        android:paddingRight="55dp"
+        android:layout_toRightOf="@id/eight_list_item_showimage_left"
+        android:paddingLeft="15dp"
+        android:paddingBottom="16dp"
+        android:layout_centerVertical="true"
+        />
+
+  </RelativeLayout>
+
+</RelativeLayout>

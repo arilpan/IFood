@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fan.eightrestaurant.ui.PreferentialDetailsActivity"
+    >
+
+  <include
+      android:id="@+id/title"
+      layout="@layout/common_title_back_grey_color"
+      />
+
+  <ImageView
+
+      android:id="@+id/activity_preferential_details_iamge"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/lianjieshibai"
+      android:visibility="gone"
+      />
+
+  <WebView
+      android:layout_below="@id/title"
+      android:id="@+id/activity_preferential_details_webview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+  </WebView>
+</RelativeLayout>

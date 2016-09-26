@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/screen_background"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:background="@color/white"
+      >
+    <ImageView
+        android:id="@+id/fragment_food_list_item_showiamge"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/dish_img"
+        />
+
+    <TextView
+        android:id="@+id/fragment_food_list_item_foodname"
+        android:text="糖醋排骨"
+        android:paddingLeft="10dp"
+        style="@style/fragment_food_list_text_style"
+        />
+
+    <TextView
+        style="@style/fragment_food_list_text_style"
+        android:id="@+id/fragment_food_list_item_foodprice"
+        android:text="￥38"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <View
+        android:id="@+id/fragment_food_list_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/fragment_food_list_item_foodprice"
+        android:background="@color/screen_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_below="@id/fragment_food_list_item_line"
+        android:id="@+id/fragment_food_list_item_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="14dp"
+        android:text="所有糖醋料理皆具有养益肝脾静脉的效益。而猪排骨除含蛋白、脂肪、维生素外，还含有大量的磷酸钙、骨胶原、骨粘蛋白等营养物质。"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        />
+
+
+    <TextView
+        android:id="@+id/fragment_food_list_item_buynum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="\t2688人购买"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/gray"
+        android:drawableLeft="@drawable/meishipaihang_canyin"
+        android:layout_below="@id/fragment_food_list_item_introduction"
+        android:background="@drawable/meishipaihang_border"
+        />
+
+  </RelativeLayout>
+
+</RelativeLayout>

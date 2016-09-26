@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/bg_app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+  <RelativeLayout
+      android:layout_marginTop="10dp"
+      android:background="#fff"
+      android:layout_width="match_parent"
+      android:layout_height="34dp"
+      >
+    <ImageView
+        android:id="@+id/mall_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/pre_order_icon_mall"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        />
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/mall_icon"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:text="@string/eight_mall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/order_time"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:text="2016-01-01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_toLeftOf="@id/order_time"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:textColor="#333"
+        android:text="@string/order_cancel_order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+  </RelativeLayout>
+  <View style="@style/line_h"/>
+
+  <RelativeLayout
+      android:background="#fff"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/total_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        >
+
+      <TextView
+          android:id="@+id/total_title"
+          android:layout_marginLeft="20dp"
+          android:layout_centerVertical="true"
+          android:textSize="16sp"
+          android:textColor="#333"
+          android:text="@string/order_cancel_total_price"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          />
+      <TextView
+          android:layout_marginLeft="8dp"
+          android:layout_toRightOf="@id/total_title"
+          android:layout_centerVertical="true"
+          android:textSize="16sp"
+          android:textColor="#ff6666"
+          android:text="$112"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_above="@id/total_title_layout"
+        android:id="@+id/listview"
+        tools:listitem="@layout/fragment_order_cancel_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </ListView>
+    <View
+        android:layout_above="@id/total_title_layout"
+        style="@style/line_h"
+
+        />
+
+  </RelativeLayout>
+
+
+</LinearLayout>

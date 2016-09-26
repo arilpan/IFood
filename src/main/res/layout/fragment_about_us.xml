@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <include
+      layout="@layout/common_title_back_grey_color"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="2.8"
+      android:orientation="vertical"
+      >
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/icon"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="8号餐饮"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="精致美食,快速预订"
+        />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="4"
+      android:orientation="vertical"
+      >
+
+    <View
+        android:layout_marginBottom="18dp"
+        style="@style/line_divider_h"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="8号餐饮是由8号餐饮推出南京旭丹信息科技研发的手机客户端。客户端打破传统用餐模式，此案用手机预约点餐方式，为顾客第一时间提供店铺最新的优惠信息。给客户带来极大的方便和优惠。"
+        />
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="研发公司电话:025-84187713"
+        />
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="地址：南京市江宁区龙眠大道180号 2楼202室"
+        />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+
+    <View
+        style="@style/line_divider_h"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center"
+        android:padding="13dp"
+        android:paddingBottom="5dp"
+        android:text="版本号:1.0.1"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center"
+        android:text="Copyright©南京旭丹信息科技有限公司"
+        android:textSize="13sp"
+        android:paddingBottom="8dp"
+        />
+  </LinearLayout>
+</LinearLayout>

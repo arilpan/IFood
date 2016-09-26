@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    >
+
+  <RelativeLayout
+      android:id="@+id/total_title_layout"
+      android:layout_width="match_parent"
+      android:layout_height="34dp"
+      android:layout_marginTop="10dp"
+      android:background="#fff"
+      >
+
+    <ImageView
+        android:id="@+id/mall_icon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:src="@drawable/pre_order_icon_mall"
+        />
+
+    <TextView
+        android:id="@+id/order_item_mall_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/mall_icon"
+        android:text="@string/eight_mall"
+        android:textColor="#333"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/order_item_order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="2016-01-01"
+        android:textColor="#333"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/order_item_order_time"
+        android:text="@string/order_cancel_order_time"
+        android:textColor="#333"
+        android:textSize="14sp"
+        />
+  </RelativeLayout>
+
+  <View style="@style/line_h"/>
+
+  <!--
+      android:layout_below="@id/total_title_layout"
+      android:layout_above="@id/total_price_layout"
+  -->
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/order_item_recyview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      tools:listitem="@layout/fragment_order_cancel_list_item"
+      >
+
+  </android.support.v7.widget.RecyclerView>
+
+  <View
+      style="@style/line_h"
+      android:layout_above="@id/total_title_layout"
+
+      />
+
+  <RelativeLayout
+      android:id="@+id/total_price_layout"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_alignParentBottom="true"
+      >
+
+    <TextView
+        android:id="@+id/total_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:text="@string/order_cancel_total_price"
+        android:textColor="#333"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/order_item_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/total_title"
+        android:text="$112"
+        android:textColor="#ff6666"
+        android:textSize="16sp"
+        />
+
+  </RelativeLayout>
+</LinearLayout>

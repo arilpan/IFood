@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pre_order_background"
+    android:orientation="vertical"
+    >
+
+  <include layout="@layout/common_title_red"/>
+
+  <ScrollView
+
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="main -- banner =>4个选择=》4个选择=》
+            菜品列表=》结束"
+          android:visibility="gone"
+          />
+      <!--banner-->
+      <include
+          layout="@layout/common_banner"
+          />
+      <!--分类选择-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:background="@color/white"
+          android:orientation="horizontal"
+          >
+
+        <LinearLayout
+            android:id="@+id/pre_order_layout"
+            style="@style/index_class_select_layout"
+            >
+
+          <ImageView
+              style="@style/index_class_select_layout_image"
+              android:src="@drawable/index_pre_order"
+              />
+
+          <TextView
+              style="@style/index_class_select_layout_text"
+              android:text="@string/index_pre_order"
+              />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_arrival_layout"
+            style="@style/index_class_select_layout"
+            >
+
+          <ImageView
+
+              style="@style/index_class_select_layout_image"
+              android:src="@drawable/index_new_arrival"
+              />
+
+          <TextView
+              style="@style/index_class_select_layout_text"
+              android:text="@string/index_new_arrival"
+              />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/greate_package_layout"
+            style="@style/index_class_select_layout"
+            >
+
+          <ImageView
+              style="@style/index_class_select_layout_image"
+              android:src="@drawable/huanjingzhanshi"
+              />
+
+          <TextView
+              style="@style/index_class_select_layout_text"
+              android:text="@string/index_env_show"
+              />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/recharge_layout"
+            style="@style/index_class_select_layout"
+            >
+
+          <ImageView
+              style="@style/index_class_select_layout_image"
+              android:src="@drawable/index_recharge_discount"
+              />
+
+          <TextView
+              style="@style/index_class_select_layout_text"
+              android:text="@string/index_recharge_discount"
+              />
+        </LinearLayout>
+      </LinearLayout>
+
+      <View style="@style/line_divider"
+          />
+      <!--活动选择-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:background="@color/white"
+          android:orientation="horizontal"
+          >
+
+        <RelativeLayout
+            android:id="@+id/dish_rank_rl"
+            style="@style/index_activity_select_layout"
+            >
+
+          <TextView
+              android:id="@+id/activity_title_1"
+              style="@style/index_activity_select_layout_text_title"
+              android:text="@string/index_dishes_rank"
+              android:textColor="#ff9900"
+              />
+
+          <TextView
+              style="@style/index_activity_select_layout_text_detail"
+              android:layout_below="@id/activity_title_1"
+              android:text="@string/index_can_always_find_your_love"
+              />
+
+          <ImageView
+
+              style="@style/index_activity_select_layout_image"
+              android:src="@drawable/meishipaihangbang"
+              />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line_v_1"
+            style="@style/line_divider_v"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            >
+
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/discount_dish_rl"
+            style="@style/index_activity_select_layout"
+            >
+
+          <TextView
+              android:id="@+id/activity_title_2"
+              style="@style/index_activity_select_layout_text_title"
+              android:text="@string/index_super_value_discount_dishes"
+              android:textColor="#f6687d"
+              />
+
+          <TextView
+              style="@style/index_activity_select_layout_text_detail"
+              android:layout_below="@id/activity_title_2"
+              android:text="@string/index_more_than_half_off"
+              />
+
+          <ImageView
+
+              style="@style/index_activity_select_layout_image"
+              android:src="@drawable/zhekou"
+              />
+        </RelativeLayout>
+      </LinearLayout>
+
+      <View
+          style="@style/line_divider_h"
+          android:layout_gravity="center"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:orientation="horizontal"
+          >
+
+        <RelativeLayout
+            android:id="@+id/recharge_rl"
+            style="@style/index_activity_select_layout"
+            >
+
+          <TextView
+              android:id="@+id/activity_title_3"
+              style="@style/index_activity_select_layout_text_title"
+              android:text="@string/index_recharge_greate_discount"
+              android:textColor="#6bbd00"
+              />
+
+          <TextView
+              style="@style/index_activity_select_layout_text_detail"
+              android:layout_below="@id/activity_title_3"
+              android:text="@string/index_recharge_member_1000_to_1100"
+              />
+
+          <ImageView
+
+              style="@style/index_activity_select_layout_image"
+              android:src="@drawable/chongzhizhongxin"
+              />
+        </RelativeLayout>
+
+        <View
+            style="@style/line_divider_v"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            >
+
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/dayly_welfare_rl"
+            style="@style/index_activity_select_layout"
+            >
+
+          <TextView
+              android:id="@+id/activity_title_4"
+              style="@style/index_activity_select_layout_text_title"
+              android:text="@string/index_news_list"
+              android:textColor="#7687f1"
+              />
+
+          <TextView
+              style="@style/index_activity_select_layout_text_detail"
+              android:layout_below="@id/activity_title_4"
+              android:text="@string/index_give_100_rmb"
+              />
+
+          <ImageView
+
+              style="@style/index_activity_select_layout_image"
+              android:src="@drawable/meishizixun"
+              />
+        </RelativeLayout>
+      </LinearLayout>
+
+      <View style="@style/line_divider"
+          />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginTop="10dp"
+          android:background="@color/white"
+          android:orientation="vertical"
+          >
+
+        <RelativeLayout
+            android:id="@+id/more_hot_dish"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_alignParentLeft="true"
+              android:layout_marginLeft="20dp"
+              android:gravity="center_vertical"
+              android:text="@string/index_hot_dishes"
+              android:textColor="#333"
+              android:textSize="13sp"
+              />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="20dp"
+              android:gravity="center_vertical"
+              android:text="@string/index_see_more"
+              android:textColor="#999"
+              android:textSize="10sp"
+              />
+        </RelativeLayout>
+
+        <View style="@style/line_divider"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/index_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/index_list_item"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+      </LinearLayout>
+    </LinearLayout>
+
+
+  </ScrollView>
+</LinearLayout>
